@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学校法人 日本语学校 (城市卡片版)</title>
+<style>
+  body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    margin: 0;
+    padding: 20px 15px;
+    background-color: #f4f7f6;
+    color: #333;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-size: 2.2em; /* 大标题字号 */
+    color: #3A506B; /* 沉稳的深蓝色 */
+    text-align: center;
+    margin-bottom: 30px; /* 与下方卡片间距 */
+    font-weight: 700; /* 粗体 */
+    padding: 10px 0;
+    /* border-bottom: 3px solid #6FFFE9; /* 薄荷绿下划线，与一些卡片颜色呼应 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  }
+
+  .main-title .highlight {
+    color: #FF6B6B; /* 突出“学校法人”的颜色，与之前方案的标题色呼应 */
+    font-style: italic;
+  }
+
+  .city-card {
+    margin-bottom: 25px;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .city-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .city-card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .schools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .school-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #444;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 0.95em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex-grow: 1;
+    min-width: 120px;
+    transition: background-color 0.2s ease;
+  }
+
+  .school-card:hover {
+      background-color: rgba(255, 255, 255, 1);
+      color: #222;
+  }
+
+  /* --- City Card Colors --- */
+  .city-tokyo { background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+  .city-osaka { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+  .city-nagano { background: linear-gradient(135deg, #667eea, #764ba2); }
+  .city-yamanashi { background: linear-gradient(135deg, #89f7fe, #66a6ff); }
+  .city-kyoto { background: linear-gradient(135deg, #ff8c94, #ffc4c8); }
+  .city-saitama { background: linear-gradient(135deg, #38f9d7, #43e97b); }
+  .city-kanagawa { background: linear-gradient(135deg, #ffdde1, #ee9ca7); }
+  .city-fukuoka { background: linear-gradient(135deg, #f6d365, #fda085); }
+  .city-tochigi { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+  .city-default { background: linear-gradient(135deg, #757F9A, #D7DDE8); }
+
+  /* Responsive adjustments for title */
+  @media (max-width: 600px) {
+    .main-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .city-card h2 {
+      font-size: 1.5em;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1 class="main-title">
+    <span class="highlight">学校法人</span> 资质日本语学校清单 🇯🇵
+  </h1>
+
+  <!-- 东京都 -->
+  <div class="city-card city-tokyo">
+    <h2>🗼 东京都</h2>
+    <div class="schools-grid">
+      <div class="school-card">富士国际语学院</div>
+      <div class="school-card">学校法人金井学园秀林日本语学校</div>
+      <div class="school-card">千驮谷日本语学校（本校）</div>
+      <div class="school-card">ARC东京日本语学校</div>
+      <div class="school-card">TLS东洋言语学院</div>
+      <div class="school-card">长沼学校东京日本语学校</div>
+      <div class="school-card">东京银星日本语学校</div>
+      <div class="school-card">公益财团法人日中友好会馆日中学院</div>
+      <div class="school-card">学校法人湖南学园 早稻田外语专门学校</div>
+      <div class="school-card">学校法人国际青年交流学院east west日本语学校</div>
+      <div class="school-card">学校法人 新井学园赤门会日本语学校 本校本馆</div>
+      <div class="school-card">学校法人香川学园美罗斯言语学院</div>
+      <div class="school-card">学校法人大原学园日本语学校（船堀校）</div>
+      <div class="school-card">山野日本语学校</div>
+      <div class="school-card">草苑日本语学校</div>
+      <div class="school-card">木下学园 迦南国际教育学苑</div>
+      <div class="school-card">共立日语学院</div>
+    </div>
+  </div>
+
+  <!-- 大阪府 -->
+  <div class="city-card city-osaka">
+    <h2>🐙 大阪府</h2>
+    <div class="schools-grid">
+      <div class="school-card">学校法人美力克学園（MERIC日本语学校）</div>
+      <div class="school-card">ECC外语专门学校</div>
+      <div class="school-card">专门学校翼路学院</div>
+      <div class="school-card">大阪生物医疗工学专门学校</div>
+      <div class="school-card">清风情报工科学院</div>
+      <div class="school-card">学校法人新大阪外国语学院</div>
+    </div>
+  </div>
+
+  <!-- 长野县 -->
+  <div class="city-card city-nagano">
+    <h2>🏔️ 长野县</h2>
+    <div class="schools-grid">
+      <div class="school-card">ISI日本语学校（长野校）</div>
+    </div>
+  </div>
+
+  <!-- 山梨县 -->
+  <div class="city-card city-yamanashi">
+    <h2>🍇 山梨县</h2>
+    <div class="schools-grid">
+      <div class="school-card">学校法人优尼塔斯日本语学校甲府校</div>
+    </div>
+  </div>
+
+  <!-- 京都府 -->
+  <div class="city-card city-kyoto">
+    <h2>⛩️ 京都府</h2>
+    <div class="schools-grid">
+      <div class="school-card">ARC京都日本语学校</div>
+      <div class="school-card">学校法人京都YMCA学园</div>
+    </div>
+  </div>
+
+  <!-- 埼玉县 -->
+  <div class="city-card city-saitama">
+    <h2>🌳 埼玉县</h2>
+    <div class="schools-grid">
+      <div class="school-card">学校法人三井学园武藏浦和日本语学院</div>
+      <div class="school-card">爱光学园 山手日本语学校</div>
+    </div>
+  </div>
+
+  <!-- 神奈川县 -->
+  <div class="city-card city-kanagawa">
+    <h2>🌊 神奈川县</h2>
+    <div class="schools-grid">
+      <div class="school-card">横滨设计学院</div>
+    </div>
+  </div>
+
+  <!-- 福冈县 -->
+  <div class="city-card city-fukuoka">
+    <h2>🍜 福冈县</h2>
+    <div class="schools-grid">
+      <div class="school-card">九州英数馆国际言语学院</div>
+    </div>
+  </div>
+
+  <!-- 栃木县 -->
+  <div class="city-card city-tochigi">
+    <h2>🍓 栃木县</h2>
+    <div class="schools-grid">
+      <div class="school-card">圣玛丽日本语学院</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
